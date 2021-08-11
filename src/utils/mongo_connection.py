@@ -4,9 +4,8 @@ from config import mongo_url
 
 client = MongoClient(mongo_url)
 
-collection = client.get_database("bcn_data")["population"]
-
 def mongo_read(query={}, project=None, client=client, q=None):
+    collection = client.get_database("bcn_data")["population"]
     if not q:
         return collection.find(query, project)
 
