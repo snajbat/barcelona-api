@@ -1,6 +1,6 @@
 from app import app
-from config import PORT
+import os
 import controllers.root_controller
 import controllers.fetch
 
-app.run("0.0.0.0", PORT, debug=True)
+app.run("0.0.0.0", os.getenv("PORT"), debug=True)
