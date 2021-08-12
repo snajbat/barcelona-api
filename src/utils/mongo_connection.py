@@ -1,4 +1,3 @@
-from typing import Collection
 from pymongo import MongoClient
 from config import mongo_url
 
