@@ -10,7 +10,7 @@ En la carpeta **src** se encuentra el código de la API en sí. En la raíz de e
 
 ## Technologies
 
-[![Python][https://www.python.org/static/img/python-logo@2x.png]][https://www.python.org/] [![Flask][https://flask.palletsprojects.com/en/2.0.x/_images/flask-logo.png]][https://flask.palletsprojects.com/en/2.0.x/] [![Mongodb][https://angularfrontenders.com/wp-content/uploads/2021/01/MONGO-DB-logo-300x470-x.png]][https://www.mongodb.com/es] [![Streamlit][https://cdn-images-1.medium.com/max/1024/1*u9U3YjxT9c9A1FIaDMonHw.png]][https://streamlit.io/] [![Pandas][https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/768px-Pandas_logo.svg.png]][https://pandas.pydata.org/] [![Plotly][https://upload.wikimedia.org/wikipedia/commons/3/37/Plotly-logo-01-square.png]][https://plotly.com/] [![Docker][https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png]][https://www.docker.com/] [![Heroku][https://estebanromero.com/wp-content/uploads/2018/02/heroku1.png]][https://www.heroku.com/platform]
+
 
 ## Manual de uso
 
