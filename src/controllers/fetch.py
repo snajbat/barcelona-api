@@ -4,7 +4,6 @@ from utils.conditions import group_query
 from utils.json_response import json_response
 from utils.mongo_connection import mongo_read
 from utils.handle_error import handle_error
-from utils.conditions import group_query
 
 @app.get("/neighborhood/<neigh>")
 @handle_error
