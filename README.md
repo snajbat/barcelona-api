@@ -1,9 +1,20 @@
-# My Barcelona API
+# My Barcelona Population API
+
+La API devuelve los datos de la población de Barcelona en un función del barrio o distrito deseado. Además, usando diferentes *query parameters* podemos agrupar dichos datos por sexos, edades quinquenales o simplemente, ver el total de habitantes de los mismos.
+
+## Estructura
+
+En la carpeta **front** del repo puedes encontrar el código referente al dashboard de streamlit donde poder visualizar gráficas creadas a partir de los datos extraídos de la API.
+
+En la carpeta **src** se encuentra el código de la API en sí. En la raíz de esta se encuentran la configuración de las variables de entorno y el arranque de la API y en las otras dos carpetas se organiza el resto del código: **controllers** contiene las diferentes rutas de la API, y **utils** contiene archivos con diferentes funciones útiles para el funcionamiento de la API.
+
+## Technologies
+
+
 
 ## Manual de uso
 
-La API permite hacer búsquedas en un función del barrio o distrito del que se requieran los datos. Usando el endpoint /neighborhood/\<neigh\> y sustituyendo *neigh* por el nombre del barrio o código (*ver códigos más abajo*), podemos obtener la información de la población de un barrio por edad quinquenal y sexo.
-El endpoint /district/\<district\> tiene el mismo funcionamiento que el anterior, mostrando todos los documentos de la base de datos correspondientes a ese distrito de Barcelona.
+Usando el endpoint /neighborhood/\<neigh\> y sustituyendo *neigh* por el nombre del barrio o código (*ver códigos más abajo*), podemos obtener la información de la población de un barrio por edad quinquenal y sexo. El endpoint /district/\<district\> tiene el mismo funcionamiento que el anterior, mostrando todos los documentos de la base de datos correspondientes a ese distrito de Barcelona.
 
 Por otro lado, también podemos pasar como query *group* con tres posibles valores, *gender, age y total*, para mostrar la población por sexos, edades quinquenales o la población total del barrio o distrito, respectivamente.
 
