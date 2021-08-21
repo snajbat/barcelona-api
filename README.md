@@ -1,9 +1,20 @@
-# My Barcelona API
+# My Barcelona Population API
+
+La API devuelve los datos de la población de Barcelona en un función del barrio o distrito deseado. Además, usando diferentes *query parameters* podemos agrupar dichos datos por sexos, edades quinquenales o simplemente, ver el total de habitantes de los mismos.
+
+## Estructura
+
+En la carpeta **front** del repo puedes encontrar el código referente al dashboard de streamlit donde poder visualizar gráficas creadas a partir de los datos extraídos de la API.
+
+En la carpeta **src** se encuentra el código de la API en sí. En la raíz de esta se encuentran la configuración de las variables de entorno y el arranque de la API y en las otras dos carpetas se organiza el resto del código: **controllers** contiene las diferentes rutas de la API, y **utils** contiene archivos con diferentes funciones útiles para el funcionamiento de la API.
+
+## Technologies
+
+![[Python][https://www.python.org/static/img/python-logo@2x.png]][https://www.python.org/] ![[Flask][https://flask.palletsprojects.com/en/2.0.x/_images/flask-logo.png]][https://flask.palletsprojects.com/en/2.0.x/] ![[Mongodb][https://angularfrontenders.com/wp-content/uploads/2021/01/MONGO-DB-logo-300x470-x.png]][https://www.mongodb.com/es] ![[Streamlit][https://cdn-images-1.medium.com/max/1024/1*u9U3YjxT9c9A1FIaDMonHw.png]][https://streamlit.io/] ![[Pandas][https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/768px-Pandas_logo.svg.png]][https://pandas.pydata.org/] ![[Plotly][https://upload.wikimedia.org/wikipedia/commons/3/37/Plotly-logo-01-square.png]][https://plotly.com/] ![[Docker][https://d1.awsstatic.com/acs/characters/Logos/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png]][https://www.docker.com/] ![[Heroku][https://estebanromero.com/wp-content/uploads/2018/02/heroku1.png]][https://www.heroku.com/platform]
 
 ## Manual de uso
 
-La API permite hacer búsquedas en un función del barrio o distrito del que se requieran los datos. Usando el endpoint /neighborhood/\<neigh\> y sustituyendo *neigh* por el nombre del barrio o código (*ver códigos más abajo*), podemos obtener la información de la población de un barrio por edad quinquenal y sexo.
-El endpoint /district/\<district\> tiene el mismo funcionamiento que el anterior, mostrando todos los documentos de la base de datos correspondientes a ese distrito de Barcelona.
+Usando el endpoint /neighborhood/\<neigh\> y sustituyendo *neigh* por el nombre del barrio o código (*ver códigos más abajo*), podemos obtener la información de la población de un barrio por edad quinquenal y sexo. El endpoint /district/\<district\> tiene el mismo funcionamiento que el anterior, mostrando todos los documentos de la base de datos correspondientes a ese distrito de Barcelona.
 
 Por otro lado, también podemos pasar como query *group* con tres posibles valores, *gender, age y total*, para mostrar la población por sexos, edades quinquenales o la población total del barrio o distrito, respectivamente.
 
