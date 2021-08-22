@@ -2,19 +2,22 @@
 
 La API devuelve los datos de la población de Barcelona en un función del barrio o distrito deseado. Además, usando diferentes *query parameters* podemos agrupar dichos datos por sexos, edades quinquenales o simplemente, ver el total de habitantes de los mismos.
 
+#### Enlace despliegue heroku: https://bcn-api.herokuapp.com/
+
 ## Estructura
 
 En la carpeta **front** del repo puedes encontrar el código referente al dashboard de streamlit donde poder visualizar gráficas creadas a partir de los datos extraídos de la API.
 
 En la carpeta **src** se encuentra el código de la API en sí. En la raíz de esta se encuentran la configuración de las variables de entorno y el arranque de la API y en las otras dos carpetas se organiza el resto del código: **controllers** contiene las diferentes rutas de la API, y **utils** contiene archivos con diferentes funciones útiles para el funcionamiento de la API.
 
-## Technologies
+## Tecnologías
 
+<a href="https://www.python.org/"><img src="/readme-images/python-logo@2x.png" width="170"></a> <a href="https://pandas.pydata.org/"><img src="/readme-images/768px-Pandas_logo.svg.png" width="170"></a> <a href="https://flask.palletsprojects.com/en/2.0.x/" ><img src="/readme-images/flask-logo.png" width="170"></a> <a href="https://www.mongodb.com/es"><img src="/readme-images/MONGO-DB-logo-300x470-x.png" width="170"></a> <a href="https://streamlit.io/"><img src="/readme-images/streamlit-logo.png" width="170"></a> <a href="https://plotly.com/"><img src="/readme-images/Plotly-logo-01-square.png" width="170"></a> <a href="https://www.docker.com/"><img src="/readme-images/Docker-Logo.png" width="170"></a> <a href="https://www.heroku.com/home"><img src="/readme-images/heroku1.png" width="170"></a> 
 
 
 ## Manual de uso
 
-Usando el endpoint /neighborhood/\<neigh\> y sustituyendo *neigh* por el nombre del barrio o código (*ver códigos más abajo*), podemos obtener la información de la población de un barrio por edad quinquenal y sexo. El endpoint /district/\<district\> tiene el mismo funcionamiento que el anterior, mostrando todos los documentos de la base de datos correspondientes a ese distrito de Barcelona.
+El path principal devuelve todos los datos que hay en el dataset. Usando el endpoint /neighborhood/\<neigh\> y sustituyendo *neigh* por el nombre del barrio o código (*ver códigos más abajo*), podemos obtener la información de la población de un barrio por edad quinquenal y sexo. El endpoint /district/\<district\> tiene el mismo funcionamiento que el anterior, mostrando todos los documentos de la base de datos correspondientes a ese distrito de Barcelona.
 
 Por otro lado, también podemos pasar como query *group* con tres posibles valores, *gender, age y total*, para mostrar la población por sexos, edades quinquenales o la población total del barrio o distrito, respectivamente.
 
